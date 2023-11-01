@@ -31,8 +31,10 @@ jobs:
           pythob-version: ${{ matrix.python-version }}
 
       - name: Install dependenci
-        run: python -m pip install pytest
+        run: |
+          python -m pip install numpy
+          python -m pip install pytest
 
       - name: Run test
-        run: pytest tests.py
+        run: python -m pytest
 

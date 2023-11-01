@@ -20,7 +20,7 @@ jobs:
           - "pypy 3.8"
           - "pypy 3.9"
     name: Test
-    runs-on: ${{ matris.os }}
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Checot code
         uses: actions/checkout@v3

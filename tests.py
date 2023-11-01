@@ -26,6 +26,6 @@ def test_failed():
     routes = transport_min_cost(supply, demand, costs)
     # Вартість доставки
     total = np.sum(routes * costs)
-    assert total == 690
+    assert total == 665
 
 

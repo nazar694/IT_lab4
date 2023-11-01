@@ -3,7 +3,7 @@ from lab3 import transport_min_cost
 import numpy as np
 
 
-def test_correct(self):
+def test_correct():
     # Ввід початкових даних
     supply = np.array([10, 20, 30])  # Постачальники
     demand = np.array([16, 12, 11, 10])  # Споживачі
@@ -16,7 +16,7 @@ def test_correct(self):
     assert total == 690
 
 
-def test_failed(self):
+def test_failed():
     # Ввід початкових даних
     supply = np.array([15, 25, 35])  # Постачальники
     demand = np.array([16, 12, 11, 10])  # Споживачі
